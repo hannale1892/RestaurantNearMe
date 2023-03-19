@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		882874CA29798AD1008834C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882874C929798AD1008834C1 /* AppDelegate.swift */; };
+		882874CC29798AD1008834C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882874CB29798AD1008834C1 /* SceneDelegate.swift */; };
+		882874D129798AD1008834C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882874CF29798AD1008834C1 /* Main.storyboard */; };
+		882874D329798AD5008834C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882874D229798AD5008834C1 /* Assets.xcassets */; };
+		882874D629798AD5008834C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882874D429798AD5008834C1 /* LaunchScreen.storyboard */; };
+		882874DE297998E7008834C1 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882874DD297998E7008834C1 /* Venue.swift */; };
+		882874E12979A3B8008834C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882874E02979A3B8008834C1 /* MapKit.framework */; };
+		886E3B6629C4A1310014A057 /* VenueMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886E3B6529C4A1310014A057 /* VenueMapViewController.swift */; };
+		88AA717D299238A000601240 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AA717C299238A000601240 /* MapViewController.swift */; };
+		88ADCAA4299780A10069B461 /* VenueInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ADCAA3299780A10069B461 /* VenueInfoController.swift */; };
+		88D3AAD729A5F7EA00A3E490 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3AAD629A5F7EA00A3E490 /* NetworkRequest.swift */; };
+		88D3AADD29ABD3DB00A3E490 /* VenueError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3AADC29ABD3DB00A3E490 /* VenueError.swift */; };
+		88D3AAE529ABF25B00A3E490 /* WoltChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3AAE429ABF25B00A3E490 /* WoltChallengeTests.swift */; };
+		88D3AAEC29AC98AD00A3E490 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D3AAEB29AC98AD00A3E490 /* TestData.swift */; };
+		88D6164E297BE03700A72A7E /* VenueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6164D297BE03700A72A7E /* VenueCell.swift */; };
+		88D61650297BE3EC00A72A7E /* VenueTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6164F297BE3EC00A72A7E /* VenueTableViewController.swift */; };
+		88DFB79629B10BDF001583E9 /* VenueDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DFB79529B10BDF001583E9 /* VenueDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88D3AAE629ABF25B00A3E490 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 882874BE29798AD1008834C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 882874C529798AD1008834C1;
+			remoteInfo = WoltChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		882874C629798AD1008834C1 /* WoltChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoltChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		882874C929798AD1008834C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		882874CB29798AD1008834C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		882874D029798AD1008834C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		882874D229798AD5008834C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		882874D529798AD5008834C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		882874D729798AD5008834C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882874DD297998E7008834C1 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		882874E02979A3B8008834C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		886E3B6529C4A1310014A057 /* VenueMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueMapViewController.swift; sourceTree = "<group>"; };
+		88AA717C299238A000601240 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		88ADCAA3299780A10069B461 /* VenueInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueInfoController.swift; sourceTree = "<group>"; };
+		88D3AAD629A5F7EA00A3E490 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		88D3AADC29ABD3DB00A3E490 /* VenueError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueError.swift; sourceTree = "<group>"; };
+		88D3AAE229ABF25B00A3E490 /* WoltChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WoltChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D3AAE429ABF25B00A3E490 /* WoltChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoltChallengeTests.swift; sourceTree = "<group>"; };
+		88D3AAEB29AC98AD00A3E490 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		88D6164D297BE03700A72A7E /* VenueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueCell.swift; sourceTree = "<group>"; };
+		88D6164F297BE3EC00A72A7E /* VenueTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueTableViewController.swift; sourceTree = "<group>"; };
+		88DFB79529B10BDF001583E9 /* VenueDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		882874C329798AD1008834C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				882874E12979A3B8008834C1 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D3AADF29ABF25B00A3E490 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		882874BD29798AD1008834C1 = {
+			isa = PBXGroup;
+			children = (
+				882874C829798AD1008834C1 /* WoltChallenge */,
+				88D3AAE329ABF25B00A3E490 /* WoltChallengeTests */,
+				882874C729798AD1008834C1 /* Products */,
+				882874DF2979A3B8008834C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		882874C729798AD1008834C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				882874C629798AD1008834C1 /* WoltChallenge.app */,
+				88D3AAE229ABF25B00A3E490 /* WoltChallengeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		882874C829798AD1008834C1 /* WoltChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				88D6164F297BE3EC00A72A7E /* VenueTableViewController.swift */,
+				88D6164D297BE03700A72A7E /* VenueCell.swift */,
+				88DFB79529B10BDF001583E9 /* VenueDetailViewController.swift */,
+				886E3B6529C4A1310014A057 /* VenueMapViewController.swift */,
+				88AA717C299238A000601240 /* MapViewController.swift */,
+				882874DD297998E7008834C1 /* Venue.swift */,
+				88D3AAD629A5F7EA00A3E490 /* NetworkRequest.swift */,
+				88ADCAA3299780A10069B461 /* VenueInfoController.swift */,
+				88D3AADC29ABD3DB00A3E490 /* VenueError.swift */,
+				882874CF29798AD1008834C1 /* Main.storyboard */,
+				882874D229798AD5008834C1 /* Assets.xcassets */,
+				882874C929798AD1008834C1 /* AppDelegate.swift */,
+				882874CB29798AD1008834C1 /* SceneDelegate.swift */,
+				882874D429798AD5008834C1 /* LaunchScreen.storyboard */,
+				882874D729798AD5008834C1 /* Info.plist */,
+			);
+			path = WoltChallenge;
+			sourceTree = "<group>";
+		};
+		882874DF2979A3B8008834C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				882874E02979A3B8008834C1 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88D3AAE329ABF25B00A3E490 /* WoltChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				88D3AAE429ABF25B00A3E490 /* WoltChallengeTests.swift */,
+				88D3AAEB29AC98AD00A3E490 /* TestData.swift */,
+			);
+			path = WoltChallengeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		882874C529798AD1008834C1 /* WoltChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 882874DA29798AD5008834C1 /* Build configuration list for PBXNativeTarget "WoltChallenge" */;
+			buildPhases = (
+				882874C229798AD1008834C1 /* Sources */,
+				882874C329798AD1008834C1 /* Frameworks */,
+				882874C429798AD1008834C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoltChallenge;
+			productName = WoltChallenge;
+			productReference = 882874C629798AD1008834C1 /* WoltChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88D3AAE129ABF25B00A3E490 /* WoltChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88D3AAE829ABF25C00A3E490 /* Build configuration list for PBXNativeTarget "WoltChallengeTests" */;
+			buildPhases = (
+				88D3AADE29ABF25B00A3E490 /* Sources */,
+				88D3AADF29ABF25B00A3E490 /* Frameworks */,
+				88D3AAE029ABF25B00A3E490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88D3AAE729ABF25B00A3E490 /* PBXTargetDependency */,
+			);
+			name = WoltChallengeTests;
+			productName = WoltChallengeTests;
+			productReference = 88D3AAE229ABF25B00A3E490 /* WoltChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		882874BE29798AD1008834C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					882874C529798AD1008834C1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					88D3AAE129ABF25B00A3E490 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 882874C529798AD1008834C1;
+					};
+				};
+			};
+			buildConfigurationList = 882874C129798AD1008834C1 /* Build configuration list for PBXProject "WoltChallenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 882874BD29798AD1008834C1;
+			productRefGroup = 882874C729798AD1008834C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				882874C529798AD1008834C1 /* WoltChallenge */,
+				88D3AAE129ABF25B00A3E490 /* WoltChallengeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		882874C429798AD1008834C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				882874D629798AD5008834C1 /* LaunchScreen.storyboard in Resources */,
+				882874D329798AD5008834C1 /* Assets.xcassets in Resources */,
+				882874D129798AD1008834C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D3AAE029ABF25B00A3E490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		882874C229798AD1008834C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				882874DE297998E7008834C1 /* Venue.swift in Sources */,
+				88DFB79629B10BDF001583E9 /* VenueDetailViewController.swift in Sources */,
+				88AA717D299238A000601240 /* MapViewController.swift in Sources */,
+				882874CA29798AD1008834C1 /* AppDelegate.swift in Sources */,
+				886E3B6629C4A1310014A057 /* VenueMapViewController.swift in Sources */,
+				88D61650297BE3EC00A72A7E /* VenueTableViewController.swift in Sources */,
+				882874CC29798AD1008834C1 /* SceneDelegate.swift in Sources */,
+				88D6164E297BE03700A72A7E /* VenueCell.swift in Sources */,
+				88D3AAD729A5F7EA00A3E490 /* NetworkRequest.swift in Sources */,
+				88D3AADD29ABD3DB00A3E490 /* VenueError.swift in Sources */,
+				88ADCAA4299780A10069B461 /* VenueInfoController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88D3AADE29ABF25B00A3E490 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D3AAE529ABF25B00A3E490 /* WoltChallengeTests.swift in Sources */,
+				88D3AAEC29AC98AD00A3E490 /* TestData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88D3AAE729ABF25B00A3E490 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 882874C529798AD1008834C1 /* WoltChallenge */;
+			targetProxy = 88D3AAE629ABF25B00A3E490 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		882874CF29798AD1008834C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				882874D029798AD1008834C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		882874D429798AD5008834C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				882874D529798AD5008834C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		882874D829798AD5008834C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		882874D929798AD5008834C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		882874DB29798AD5008834C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83PPTQZ2P9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WoltChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RestaurantNearMe;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to learn your current location in order to show nearest restaurants";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hangle9395-gmail.com.RestaurantNearMe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		882874DC29798AD5008834C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83PPTQZ2P9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WoltChallenge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RestaurantNearMe;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need to learn your current location in order to show nearest restaurants";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hangle9395-gmail.com.RestaurantNearMe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88D3AAE929ABF25C00A3E490 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83PPTQZ2P9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hangle9395-gmail.com.WoltChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoltChallenge.app/WoltChallenge";
+			};
+			name = Debug;
+		};
+		88D3AAEA29ABF25C00A3E490 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 83PPTQZ2P9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hangle9395-gmail.com.WoltChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WoltChallenge.app/WoltChallenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		882874C129798AD1008834C1 /* Build configuration list for PBXProject "WoltChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				882874D829798AD5008834C1 /* Debug */,
+				882874D929798AD5008834C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		882874DA29798AD5008834C1 /* Build configuration list for PBXNativeTarget "WoltChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				882874DB29798AD5008834C1 /* Debug */,
+				882874DC29798AD5008834C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88D3AAE829ABF25C00A3E490 /* Build configuration list for PBXNativeTarget "WoltChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88D3AAE929ABF25C00A3E490 /* Debug */,
+				88D3AAEA29ABF25C00A3E490 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 882874BE29798AD1008834C1 /* Project object */;
+}
